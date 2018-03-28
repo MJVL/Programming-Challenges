@@ -1,3 +1,9 @@
-i_num = int(raw_input('Enter a number: '))
-b_num = list(bin(i_num))
-print('The population count of %d is %d.' % (i_num, b_num.count('1')))
+def Population_Count(num):
+	return list(bin(num)).count('1')
+
+def main():
+	i_num = int(raw_input('Enter a number: '))
+	print('Population count: %d' % (Population_Count(i_num)))
+
+if __name__ == '__main__':
+	main()
