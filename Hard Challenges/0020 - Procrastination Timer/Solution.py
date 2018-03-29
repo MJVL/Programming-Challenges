@@ -4,7 +4,7 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 
 def main():
     scheduler = BlockingScheduler()
-    scheduler.add_job(pymsgbox.alert('Stop Procrastinating!', 'Title'), 'interval', hours=2)
+    scheduler.add_job(pymsgbox.alert('Stop Procrastinating!', 'Procrastination Alert'), 'interval', hours=2)
     scheduler.start()
 
 
