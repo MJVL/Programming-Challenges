@@ -1,6 +1,6 @@
 package Timer;
 
-import javax.swing.*;
+import javax.swing.JOptionPane;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
