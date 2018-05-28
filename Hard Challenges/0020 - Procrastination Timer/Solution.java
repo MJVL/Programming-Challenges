@@ -1,5 +1,3 @@
-package Timer;
-
 import javax.swing.JOptionPane;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
