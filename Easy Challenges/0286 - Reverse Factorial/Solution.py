@@ -12,5 +12,6 @@ def main():
     num = int(input("Enter an integer: "))
     print("%d = %s" % (num, format_factorial(reverse_factorial(num, 2))))
 
+
 if __name__ == '__main__':
     main()

@@ -8,6 +8,6 @@ def main():
     arr_input = input("Enter the base-width, trunk, and leaves (space-delimited): ").split()
     generate_tree(int(arr_input[0]), arr_input[1], arr_input[2])
 
+
 if __name__ == '__main__':
     main()
-    

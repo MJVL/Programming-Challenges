@@ -11,5 +11,6 @@ def main():
 	print('Century: %d' % century(year))
 	print('Leap Year: %s' % 'Yes' if leap_year(year) else 'No')
 
+
 if __name__ == '__main__':
 	main()
