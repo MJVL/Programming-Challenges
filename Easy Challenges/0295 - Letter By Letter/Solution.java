@@ -4,9 +4,9 @@ public class Solution {
 
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-        System.out.print("Enter the first sentence: ");
+        System.out.print("Enter the source: ");
         String s1 = reader.nextLine();
-        System.out.print("Enter the second sentence: ");
+        System.out.print("Enter the target: ");
         String s2 = reader.nextLine();
         letterByLetter(s1, s2);
     }

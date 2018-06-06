@@ -6,7 +6,7 @@ def letter_by_letter(s1, s2):
 
 
 def main():
-    letter_by_letter(input("Enter the first sentence: "), input("Enter the second sentence: "))
+    letter_by_letter(input("Enter the source: "), input("Enter the target: "))
 
 if __name__ == '__main__':
     main()
