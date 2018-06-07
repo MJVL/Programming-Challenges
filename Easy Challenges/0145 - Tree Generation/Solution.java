@@ -11,20 +11,16 @@ public class Solution {
 
     public static void generateTree(int base, char trunk, char leaves) {
         for (int i = 0; i < base / 2 + 1; i++) {
-            for (int j = 0; j < base / 2 - i; j++) {
-                System.out.print(" ");
-            }
-            for (int j = 0; j < i * 2 + 1; j++) {
-                System.out.print(leaves);
-            }
+            Stream.generate(() -> " ").limit(base / 2 - i)
+                    .forEach(System.out::print);
+            Stream.generate(() -> leaves).limit(i * 2 + 1)
+                    .forEach(System.out::print);
             System.out.println();
         }
-        for (int i = 0; i < base / 2 - 1; i++) {
-            System.out.print(" ");
-        }
-        for (int i = 0; i < 3; i++) {
-            System.out.print(trunk);
-        }
+        Stream.generate(() -> " ").limit(base / 2 - 1)
+                .forEach(System.out::print);
+        Stream.generate(() -> trunk).limit(3)
+                .forEach(System.out::print);
     }
 
 }
