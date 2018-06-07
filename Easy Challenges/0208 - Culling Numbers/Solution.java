@@ -13,7 +13,8 @@ public class Solution {
 
     public static Set<Integer> cullNumbers(int[] arrNums) {
        Set<Integer> setUnique = new HashSet<Integer>();
-       Arrays.stream(arrNums).forEach(setUnique::add);
+       Arrays.stream(arrNums)
+           .forEach(setUnique::add);
        return setUnique;
     }
 
