@@ -1,4 +1,3 @@
-
 def remove_characters(str_one, str_two):
     for char in str_two:
         str_one = str_one.replace(char, "")
