@@ -8,7 +8,7 @@ public class Solution {
         String strOne = reader.nextLine();
         System.out.print("Enter the characters to remove:");
         String strTwo = reader.nextLine();
-        System.out.println("Modified string: " + removeCharacters(strOne, strTwo));
+        System.out.printf("Modified string: %s", removeCharacters(strOne, strTwo));
     }
 
     public static String removeCharacters(String strOne, String strTwo) {
