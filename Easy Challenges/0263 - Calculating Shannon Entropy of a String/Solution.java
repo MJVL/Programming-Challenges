@@ -10,14 +10,14 @@ public class Solution {
         System.out.printf("%.5f", shannonEntropy(reader.nextLine()));
     }
 
-    public static double shannonEntropy(String str) {
+    public static double shannonEntropy(String seq) {
         Map<Character, Integer> mapSymbol = new HashMap<Character, Integer>();
-        for (char c: str.toCharArray()) {
+        for (char c: seq.toCharArray()) {
             mapSymbol.put(c, !mapSymbol.containsKey(c) ? 1 : mapSymbol.get(c) + 1);
         }
         double sEntropy = 0.0;
         for (char c: mapSymbol.keySet()) {
-            sEntropy -= (double) mapSymbol.get(c) / str.length() * Math.log((double) mapSymbol.get(c) / str.length()) / Math.log(2);
+            sEntropy -= (double) mapSymbol.get(c) / seq.length() * Math.log((double) mapSymbol.get(c) / seq.length()) / Math.log(2);
         }
         return sEntropy;
     }
