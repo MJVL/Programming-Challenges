@@ -7,9 +7,9 @@ def leap_year(year):
 
 
 def main():
-	year = int(input('Enter a year: '))
-	print('Century: %d' % century(year))
-	print('Leap Year: %s' % 'Yes' if leap_year(year) else 'No')
+	year = int(input("Enter a year: "))
+	print("Century: %d" % century(year))
+	print("Leap Year: %s" % "Yes" if leap_year(year) else "No")
 
 
 if __name__ == '__main__':
