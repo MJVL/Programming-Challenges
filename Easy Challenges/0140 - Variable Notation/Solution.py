@@ -15,5 +15,6 @@ def main():
     series = str(input("Enter series: "))
     print(to_camel(series) if mode == 0 else (to_snake(series) if mode == 1 else (to_upper_snake(series))))
 
+
 if __name__ == '__main__':
     main()
