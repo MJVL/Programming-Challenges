@@ -6,7 +6,7 @@ public class Solution {
         Scanner reader = new Scanner(System.in);
         System.out.print("Enter the string: ");
         String strOne = reader.nextLine();
-        System.out.print("Enter the characters to remove:");
+        System.out.print("Enter the characters to remove: ");
         String strTwo = reader.nextLine();
         System.out.printf("Modified string: %s", removeCharacters(strOne, strTwo));
     }
