@@ -9,5 +9,6 @@ def main():
     characters = str(input("Enter characters to remove: "))
     print("Modified string: %s" % remove_characters(str_one, characters))
 
+    
 if __name__ == '__main__':
     main()
