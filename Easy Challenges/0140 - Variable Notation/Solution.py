@@ -1,5 +1,5 @@
 def to_camel(series):
-    return series[0].lower() + ''.join(s for s in series.title() if s.isalpha())[1:]
+    return series[0].lower() + "".join(s for s in series.title() if s.isalpha())[1:]
 
 
 def to_snake(series):
