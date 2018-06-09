@@ -1,5 +1,5 @@
 def population_count(num):
-	return list(bin(num)).count('1')
+	return list(bin(num)).count("1")
 
 
 def main():
