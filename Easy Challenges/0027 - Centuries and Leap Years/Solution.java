@@ -5,9 +5,9 @@ public class Solution {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         System.out.print("Enter a year: ");
-        int yYear = Integer.parseInt(reader.nextLine());
-        System.out.printf("Century: %d%n", century(sYear));
-        System.out.printf("Leap Year: %s", leapYear(yYear) ? "Yes" : "No");
+        int sYear = Integer.parseInt(reader.nextLine());
+        System.out.printf("Century: %d%n", century(String.valueOf(sYear)));
+        System.out.printf("Leap Year: %s", leapYear(sYear) ? "Yes" : "No");
     }
 
     public static int century(String year) {
