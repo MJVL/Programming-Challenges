@@ -12,7 +12,7 @@ public class Solution {
 
     public static boolean subsetSum(int[] intSet) {
         for (int i: intSet) {
-            if (Arrays.stream(set).anyMatch(j -> j == 0) || Arrays.stream(set).anyMatch(j -> j == -i)) {
+            if (Arrays.stream(intSet).anyMatch(j -> j == 0) || Arrays.stream(intSet).anyMatch(j -> j == -i)) {
                 return true;
             }
         }
