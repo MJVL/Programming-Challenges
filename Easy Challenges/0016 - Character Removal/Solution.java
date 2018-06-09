@@ -13,7 +13,7 @@ public class Solution {
 
     public static String removeCharacters(String strOne, String strTwo) {
         for (int i = 0; i < strTwo.length(); i++) {
-            strOne = strOne.replaceAll(strTwo.substring(i, i + 1), "");
+            strOne = strOne.replace(strTwo.substring(i, i + 1), "");
         }
         return strOne;
     }
