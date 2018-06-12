@@ -10,12 +10,7 @@ public class Solution {
     }
 
     public static int populationCount(int n) {
-        int pCount = 0;
-        while (n > 0) {
-            pCount += (n % 2 == 1) ? 1 : 0;
-            n /= 2;
-        }
-        return pCount;
+        return (n <= 0) ? 0 : ((n % 2 == 1) ? 1 : 0) + populationCount(n / 2);
     }
     
 }
