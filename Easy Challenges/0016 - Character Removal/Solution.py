@@ -1,6 +1,6 @@
 def remove_characters(str_one, str_two):
-    for char in str_two:
-        str_one = str_one.replace(char, "")
+    for c in str_two:
+        str_one = str_one.replace(c, "")
     return str_one
 
 
