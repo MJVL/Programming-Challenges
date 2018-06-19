@@ -18,11 +18,11 @@ public class Solution {
     }
 
     public static String toSnake(String series) {
-        return series.toLowerCase().replace(" ", "_");
+        return series.replace(" ", "_").toLowerCase();
     }
 
     public static String toUpperSnake(String series) {
-        return series.toUpperCase().replace(" ", "_");
+        return series.replace(" ", "_").toUpperCase();
     }
 
 }

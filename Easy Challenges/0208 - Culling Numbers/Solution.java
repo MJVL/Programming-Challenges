@@ -7,7 +7,7 @@ public class Solution {
 
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-        System.out.print("Enter unsigned integers on one line: ");
+        System.out.print("Enter unsigned integers on one line (space-delimited): ");
         System.out.println(cullNumbers(Arrays.stream(reader.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray()));
     }
 
