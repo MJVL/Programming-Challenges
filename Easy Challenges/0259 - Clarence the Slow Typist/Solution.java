@@ -12,11 +12,11 @@ public class Solution {
     }
 
     public static double totalDistance(char[] inputs) {
-        return IntStream.range(0, arrInputs.length - 1).mapToDouble(i -> distance(keypadCoordinate(arrInputs[i + 1])[0] - keypadCoordinate(arrInputs[i])[0], keypadCoordinate(arrInputs[i + 1])[1] - keypadCoordinate(arrInputs[i])[1])).sum();
+        return IntStream.range(0, arrInputs.length - 1).mapToDouble(i -> distance(keypadCoordinate(arrInputs[i]), keypadCoordinate(arrInputs[i + 1]))).sum();
     }
 
     public static double distance(int a, int b) {
-        return Math.sqrt((Math.pow(a, 2)) + (Math.pow(b, 2)));
+        return Math.sqrt((Math.pow(a[0] - b[0], 2)) + (Math.pow(a[1] - b[1], 2)));
     }
 
     public static int[] keypadCoordinate(char c) {
