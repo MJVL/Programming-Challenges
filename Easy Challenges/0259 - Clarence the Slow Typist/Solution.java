@@ -8,7 +8,7 @@ public class Solution {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         System.out.print("Enter an IP address: ");
-        System.out.printf("%.2fcm", totalDistance(reader.nextLine().toCharArray()));
+        System.out.printf("%.2fcm%n", totalDistance(reader.nextLine().toCharArray()));
     }
 
     public static double totalDistance(char[] inputs) {
