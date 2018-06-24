@@ -7,7 +7,7 @@ def twelve_days_of_christmas():
 
 
 def ordinal(i):
-    return "%d%s" % (i, "tsnrhtdd"[(math.floor(i / 10) % 10 != 1)*(i % 10 < 4) * i % 10::4])
+    return "%d%s" % (i, "tsnrhtdd"[(math.floor(i / 10) % 10 != 1) * (i % 10 < 4) * i % 10::4])
 
 
 def main():
