@@ -3,7 +3,7 @@ import java.util.stream.IntStream;
 
 public class Solution {
 
-    public static final char[][] KEYPAD = {{'1','2','3'}, {'4','5','6'}, {'7','8','9'}, {'.','0',' '}};
+    public static final char[][] KEYPAD = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}, {'.' ,'0', ' '}};
 
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
@@ -23,7 +23,7 @@ public class Solution {
         for (int i = 0; i < KEYPAD.length; i++){
             for (int j = 0; j < KEYPAD[0].length; j++){
                 if (KEYPAD[i][j] == c){
-                    return new int[]{i,j};
+                    return new int[]{i, j};
                 }
             }
         }
