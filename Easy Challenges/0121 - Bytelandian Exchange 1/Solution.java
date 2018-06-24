@@ -11,5 +11,5 @@ public class Solution {
     public static int exchange(int n) {
         return (n == 0) ? 1 : exchange(n / 2) + exchange(n / 3) + exchange(n / 4);
     }
-    
+
 }
